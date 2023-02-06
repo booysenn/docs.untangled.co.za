@@ -6,10 +6,10 @@ const config = {
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
+    logo: '',
     logoLink: '/',
     title: "Untangled Docs",
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+    githubUrl: 'https://github.com/booysenn/docs.untangled.co.za',
     helpUrl: '',
     tweetText: '',
     social: '',
@@ -30,7 +30,7 @@ const config = {
     collapsedNav: [
       '/codeblock', // add trailing slash if enabled above
     ],
-    links: [{ text: 'Hasura', link: 'https://hasura.io' }],
+    links: [{ text: 'Docs', link: 'https://docs.untangled.co.za' }],
     frontLine: false,
     ignoreIndex: true,
     title:"",
