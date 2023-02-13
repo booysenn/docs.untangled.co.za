@@ -6,7 +6,7 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { Layout, Link } from '$components';
 import NextPrevious from '../components/NextPrevious';
 import config from '../../config';
-import { Edit, StyledHeading, StyledMainWrapper } from '../components/styles/Docs';
+import { Edit, StyledHeading, StyledMainWrapper, UpdatedHeading } from '../components/styles/Docs';
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;
 
@@ -69,6 +69,8 @@ export default class MDXRuntimeTest extends Component {
 
     const metaDescription = mdx.frontmatter.metaDescription;
 
+    const gitLogLatestDate = mdx.parent?.fields?.gitLogLatestDate;
+
     let canonicalUrl = config.gatsby.siteUrl;
 
     canonicalUrl =
@@ -91,14 +93,15 @@ export default class MDXRuntimeTest extends Component {
         </Helmet>
         <div className={'titleWrapper'}>
           <StyledHeading>{mdx.fields.title}</StyledHeading>
-          <Edit className={'mobileView'}>
+          {/* <Edit className={'mobileView'}>
             {docsLocation && (
               <Link className={'gitBtn'} to={`${docsLocation}/${mdx.parent.relativePath}`}>
                 <img src={githubIcon} alt={'Github logo'} /> Edit on GitHub
               </Link>
             )}
-          </Edit>
+          </Edit> */}
         </div>
+        {gitLogLatestDate ? <UpdatedHeading>Updated: {gitLogLatestDate.substring(0,10)}</UpdatedHeading> : null}
         <StyledMainWrapper>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </StyledMainWrapper>
@@ -129,6 +132,9 @@ export const pageQuery = graphql`
       parent {
         ... on File {
           relativePath
+          fields {
+            gitLogLatestDate
+          }
         }
       }
       frontmatter {

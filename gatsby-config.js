@@ -19,6 +19,7 @@ const plugins = [
       path: `${__dirname}/content/`
     }
   },
+  `@colliercz/gatsby-transformer-gitinfo`,
   {
     resolve: 'gatsby-plugin-mdx',
     options: {

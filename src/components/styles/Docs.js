@@ -12,6 +12,17 @@ export const StyledHeading = styled('h1')`
   color: ${props => props.theme.colors.heading};
 `;
 
+export const UpdatedHeading = styled('h5')`
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  padding: 0 16px;
+  border-left: 1px dotted ${props => props.theme.colors.heading};
+  margin-top: 0;
+  padding-top: 0;
+  color: ${props => props.theme.colors.heading};
+`;
+
 export const Edit = styled('div')`
   padding: 1rem 1.5rem;
   text-align: right;
