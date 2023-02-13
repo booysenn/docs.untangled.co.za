@@ -9,7 +9,7 @@ const config = {
     logo: '',
     logoLink: '/',
     title: "Untangled Docs",
-    githubUrl: 'https://github.com/booysenn/docs.untangled.co.za',
+    githubUrl: '',
     helpUrl: '',
     tweetText: '',
     social: '',
@@ -24,13 +24,13 @@ const config = {
   },
   sidebar: {
     forcedNavOrder: [
-      '/introduction', // add trailing slash if enabled above
-      '/codeblock',
+      '/setups', // add trailing slash if enabled above
+      '/make',
     ],
     collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
+      //'/setups', // add trailing slash if enabled above
     ],
-    links: [{ text: 'Docs', link: 'https://docs.untangled.co.za' }],
+    links: [ /*{ text: 'Docs', link: 'https://docs.untangled.co.za' } */],
     frontLine: false,
     ignoreIndex: true,
     title:"",
@@ -40,7 +40,7 @@ const config = {
     description: 'Random stuff I implemented or created',
     ogImage: null,
     docsLocation: 'https://github.com/booysenn/docs.untangled.co.za/tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    favicon: '',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.

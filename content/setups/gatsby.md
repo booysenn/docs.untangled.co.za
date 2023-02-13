@@ -4,7 +4,6 @@ metaTitle: "Setting up Gatsby"
 metaDescription: "Setting up Gatsby"
 ---
 
-# Start
 I had some issues setting up Gatsby on my laptop so here are some notes I used to get it going. There is some items I still need to capture on how my whole setup works so there may be some initial steps missing.
 
 

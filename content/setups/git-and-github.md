@@ -4,7 +4,6 @@ metaTitle: "Setting up Git"
 metaDescription: "Setting up Git"
 ---
 
-# Start
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
 # Setup
