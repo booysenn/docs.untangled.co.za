@@ -7,10 +7,11 @@ Manages the content at https://docs.untangled.co.za using [Gatsby](https://www.g
 Get started by running the following commands:
 
 ```
-$ git clone git@github.com:booysenn/docs.untangled.co.za.git
-$ cd gatsby-gitbook-starter
-$ npm install
-$ npm start
+apt install npm
+git clone git@github.com:booysenn/docs.untangled.co.za.git
+cd docs.untangled.co.za
+npm install
+npm start
 ```
 
 Visit `http://localhost:8000/` to view the app.
